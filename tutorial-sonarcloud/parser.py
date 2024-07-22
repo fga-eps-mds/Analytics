@@ -87,7 +87,6 @@ def create_release():
     return res_data.get('upload_url'), tag
 
 if __name__ == '__main__':
-
     _, tag = create_release()
 
     response = requests.get(f'{BASE_URL}{REPO}&metricKeys={",".join(METRICS_SONAR)}&ps=500')
