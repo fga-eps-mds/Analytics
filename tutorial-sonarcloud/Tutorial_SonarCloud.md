@@ -1,6 +1,6 @@
 # Tutorial SonarCloud
 
-Esse tutorial busca ajudar os estudantes da disciplina a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação.
+Esse tutorial busca ajudar os estudantes das disciplinas EPS/MDS a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação.
 
 ## Criando Projeto no SonarCloud
 
