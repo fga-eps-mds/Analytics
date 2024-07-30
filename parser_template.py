@@ -65,7 +65,7 @@ if __name__ == "__main__":
         for i in range(pages+1):
             if i == 0 or i == 1:
                 continue
-            api_url_now = api_url_runs + "&page=" + str(i)
+            api_url_now = api_url_runs + "?page=" + str(i)
             response = requests.get(api_url_now)
             for j in ((response.json()['workflow_runs'])):
                 data['workflow_runs'].append(j)
