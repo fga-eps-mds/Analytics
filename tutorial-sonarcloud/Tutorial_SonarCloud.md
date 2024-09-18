@@ -1,6 +1,6 @@
-# Tutorial SonarCloud
+# Tutorial SonarCloud e Métricas do GitHub
 
-Esse tutorial busca ajudar os estudantes das disciplinas EPS/MDS a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação.
+Esse tutorial busca ajudar os estudantes das disciplinas EPS/MDS a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação. Além disso, no *parser_template.py* implementado, há também a coleta de métricas por parte do GitHub (*workflow runs*).
 
 ## Criando Projeto no SonarCloud
 
@@ -46,8 +46,8 @@ Essa action é executada a cada push na branch principal do repositório.
 
 ### Parser
 
-1. Na root do projeto, criar a pasta *sonar_scripts* e nele o arquivo *parser.py*;
-2. Copie o arquivo *parser.py*, presente na mesma pasta desse tutorial.
+1. Na root do projeto, criar a pasta *sonar_scripts* e nele o arquivo *parser_template.py*;
+2. Copie o arquivo *parser_template.py*, presente na pasta root deste repositório.
 
 Esse arquivo é responsável por extrair os dados do SonarCloud e criar uma Release com a Tag baseado na label do Pull Request.
 
