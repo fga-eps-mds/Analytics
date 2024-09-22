@@ -152,7 +152,7 @@ def save_github_metrics_runs():
 
     print("Quantidade de workflow_runs: " + str(len(data["workflow_runs"])))
 
-    file_path = f'./analytics-raw-data/GitHub_API-Runs-fga-eps-mds-{REPO}.json'
+    file_path = f'./analytics-raw-data/GitHub_API-Runs-fga-eps-mds-{REPO}-{TODAY.strftime("%m-%d-%Y-%H-%M-%S")}.json'
 
     # Salva os dados em um json file
     with open(file_path, 'w') as fp:
@@ -161,8 +161,33 @@ def save_github_metrics_runs():
 
     return
 
+def save_github_metrics_issues():
+    issues = []
+    page = 1
+
+    while True:
+        response = requests.get(api_url_issues, params={'state': 'all', 'per_page': 100, 'page': page})
+
+        page_issues = response.json()
+        if not page_issues:
+            break
+
+        issues.extend(page_issues)
+        print(f"Página {page}: {len(page_issues)} issues carregadas.")
+
+        page += 1
+
+    print("Quantidade total de issues: " + str(len(issues)))
+
+    file_path = f'./analytics-raw-data/GitHub_API-Issues-fga-eps-mds-{REPO_ISSUES}.json'
+
+    # Salvar todas as issues em um arquivo JSON
+    with open(file_path, 'w') as fp:
+        json.dump(issues, fp, indent=4)
+
 if __name__ == "__main__":
     _, tag = create_release()
 
     save_sonar_metrics(tag)
     save_github_metrics_runs()
+    save_github_metrics_issues()
