@@ -1,6 +1,6 @@
-# Tutorial SonarCloud
+# Tutorial SonarCloud e Métricas do GitHub
 
-Esse tutorial busca ajudar os estudantes das disciplinas EPS/MDS a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação.
+Esse tutorial busca ajudar os estudantes das disciplinas EPS/MDS a configurar o SonarCloud com os repositórios para análise de qualidade e a criação dos arquivos no repositório de documentação. Além disso, no *parser_template.py* implementado, há também a coleta de métricas por parte do GitHub (*workflow runs*).
 
 ## Criando Projeto no SonarCloud
 
@@ -29,11 +29,11 @@ O importante é esse arquivo excluir a pasta de testes (e outras que não sejam 
 
 1. Na root do repositório, crie a pasta *.github* e, dentro desta, a pasta *workflows*, onde serão cadatradas as actions;
 2. Crie um arquivo que será responsável por enviar os dados de análise do código para o SonarCloud, exemplo de nome: *code-analysis.yml*. Detalhes sobre o conteúdo desse arquivo:
-    * Configurar o ambiente do projeo para execução dos testes;
+    * Configurar o ambiente do projeto para execução dos testes;
     * Gerar arquivo(s) com a cobertura (coverage) dos testes;
     * Executar o SonarCloud Sca;
     * As variáveis de ambiente devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github: [Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
-        - [Criar SONAR_TOKEN](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
+      - [Criar SONAR_TOKEN](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
 
 Exemplos de arquivos para executar testes e SonarCloud:
 - [Python (FastAPI)](https://github.com/fga-eps-mds/2024.1-UnB-TV-Admin/blob/develop/.github/workflows/code-analysis.yml);
@@ -46,10 +46,10 @@ Essa action é executada a cada push na branch principal do repositório.
 
 ### Parser
 
-1. Na root do projeto, criar a pasta *sonar_scripts* e nele o arquivo *parser.py*;
-2. Copie o arquivo *parser.py*, presente na mesma pasta desse tutorial.
+1. Na root do projeto, criar a pasta *sonar_scripts* e nele o arquivo *parser_template.py*;
+2. Copie o arquivo *parser_template.py*, presente na pasta root deste repositório, com o nome *parser.py*.
 
-Esse arquivo é responsável por extrair os dados do SonarCloud e criar uma Release com a Tag baseado na label do Pull Request.
+Esse arquivo é responsável por extrair os dados do SonarCloud e do Github e criar uma Release com a Tag baseado na label do Pull Request.
 
 ### Actions - Envia métricas do SonarCloud ao Repositório de Documentação
 
@@ -89,6 +89,7 @@ jobs:
           echo RELEASE_FIX=${{ contains(github.event.pull_request.labels.*.name, 'FIX RELEASE') }} >> ./sonar_scripts/.env
           echo DEVELOP=${{ contains(github.event.pull_request.labels.*.name, 'DEVELOP') }} >> ./sonar_scripts/.env
           echo REPO=${{ github.event.repository.name }} >> ./sonar_scripts/.env
+          echo REPO_DOC=${{ secrets.REPO_DOC }} >> ./sonar_scripts/.env
 
       - name: Criar diretório
         run: mkdir -p analytics-raw-data
@@ -100,7 +101,7 @@ jobs:
         run: |
           git config --global user.email "${{secrets.USER_EMAIL}}"
           git config --global user.name "${{secrets.USER_NAME}}"
-          git clone --single-branch --branch main "https://x-access-token:${{secrets.API_TOKEN_GITHUB}}@github.com/fga-eps-mds/<<ADICIONAR AQUI SEU REPOSITÓRIO DE DOC>>" doc
+          git clone --single-branch --branch main "https://x-access-token:${{ secrets.API_TOKEN_GITHUB }}@github.com/fga-eps-mds/${{ secrets.REPO_DOC }}" doc
           mkdir -p doc/analytics-raw-data
           cp -R analytics-raw-data/*.json doc/analytics-raw-data
           cd doc
@@ -112,7 +113,8 @@ jobs:
 3. Altere nessa linha para o seu repositório de documentação: `git clone --single-branch --branch main "https://x-access-token:${{secrets.API_TOKEN_GITHUB}}@github.com/fga-eps-mds/<<ADICIONAR AQUI SEU REPOSITÓRIO DE DOC>>" doc`.
 4. De forma semelhante a outra action, algumas variáveis devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github ([Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)):
     * [API_TOKEN_GITHUB](API_TOKEN_GITHUB);
-    * USER_EMAIL e USER_NAME: seu e-mail e nome no Github.
+    * **USER_EMAIL** e **USER_NAME**: seu e-mail e nome no Github.
+    * **REPO_DOC**: deve ser o nome do repositório de documentação, que possui as issues a serem analisadas.
 
 Esse arquivo é executado a cada Pull Request fechado na branch principal do repositório.
 
