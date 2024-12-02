@@ -31,7 +31,7 @@ O importante é esse arquivo excluir a pasta de testes (e outras que não sejam 
 2. Crie um arquivo que será responsável por enviar os dados de análise do código para o SonarCloud, exemplo de nome: *code-analysis.yml*. Detalhes sobre o conteúdo desse arquivo:
     * Configurar o ambiente do projeto para execução dos testes;
     * Gerar arquivo(s) com a cobertura (coverage) dos testes;
-    * Executar o SonarCloud Sca;
+    * Executar o SonarCloud scan;
     * As variáveis de ambiente devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github: [Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
       - [Criar SONAR_TOKEN](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
 
@@ -78,7 +78,7 @@ jobs:
           fetch-depth: 0
           
       - name: Install dotenv
-        run: pip install python-dotenv packaging
+        run: pip install python-dotenv packaging pandas
           
       - name: Cria arquivo .env
         run: |
@@ -110,8 +110,7 @@ jobs:
           git push
 ```
 
-3. Altere nessa linha para o seu repositório de documentação: `git clone --single-branch --branch main "https://x-access-token:${{secrets.API_TOKEN_GITHUB}}@github.com/fga-eps-mds/<<ADICIONAR AQUI SEU REPOSITÓRIO DE DOC>>" doc`.
-4. De forma semelhante a outra action, algumas variáveis devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github ([Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)):
+3. De forma semelhante a outra action, algumas variáveis devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github ([Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)):
     * [API_TOKEN_GITHUB](API_TOKEN_GITHUB);
     * **USER_EMAIL** e **USER_NAME**: seu e-mail e nome no Github.
     * **REPO_DOC**: deve ser o nome do repositório de documentação, que possui as issues a serem analisadas.
