@@ -22,6 +22,7 @@ Essa parte deve ser feita em cada repositório de código-fonte.
     * [Python (FastAPI)](https://github.com/fga-eps-mds/2024.1-UnB-TV-Admin/blob/develop/sonar-project.properties);
     * [TypeScript (React)](https://github.com/fga-eps-mds/2023-2-CAPJu-Front/blob/develop/sonar-project.properties);
     * [Python (Django)](https://github.com/fga-eps-mds/2023-2-MeasureSoftGram-Service/blob/develop/sonar-project.properties).
+    * [Dart (Flutter)](https://github.com/fga-eps-mds/2024.2-ARANDU-APP/blob/dev/sonar-projects.properties)
 
 O importante é esse arquivo excluir a pasta de testes (e outras que não sejam do código fonte em si) dos dados coletados.
 
@@ -39,6 +40,7 @@ Exemplos de arquivos para executar testes e SonarCloud:
 - [Python (FastAPI)](https://github.com/fga-eps-mds/2024.1-UnB-TV-Admin/blob/develop/.github/workflows/code-analysis.yml);
 - [Python (Django)](https://github.com/fga-eps-mds/2023-2-MeasureSoftGram-Service/blob/develop/.github/workflows/test.yml);
 - [TypeScript (FrontEnd)](https://github.com/fga-eps-mds/2023.1-Dnit-Front/blob/main/.github/workflows/sonarcloud.yml).
+- [Dart (Flutter)](https://github.com/fga-eps-mds/2024.2-ARANDU-APP/blob/dev/.github/workflows/code-analysis.yml)
 
 Essa action é executada a cada push na branch principal do repositório.
 
