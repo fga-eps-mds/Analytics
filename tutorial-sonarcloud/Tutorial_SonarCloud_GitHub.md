@@ -22,6 +22,7 @@ Essa parte deve ser feita em cada repositório de código-fonte.
     * [Python (FastAPI)](https://github.com/fga-eps-mds/2024.1-UnB-TV-Admin/blob/develop/sonar-project.properties);
     * [TypeScript (React)](https://github.com/fga-eps-mds/2023-2-CAPJu-Front/blob/develop/sonar-project.properties);
     * [Python (Django)](https://github.com/fga-eps-mds/2023-2-MeasureSoftGram-Service/blob/develop/sonar-project.properties).
+    * [Dart (Flutter)](https://github.com/fga-eps-mds/2024.2-ARANDU-APP/blob/dev/sonar-projects.properties)
 
 O importante é esse arquivo excluir a pasta de testes (e outras que não sejam do código fonte em si) dos dados coletados.
 
@@ -31,7 +32,7 @@ O importante é esse arquivo excluir a pasta de testes (e outras que não sejam 
 2. Crie um arquivo que será responsável por enviar os dados de análise do código para o SonarCloud, exemplo de nome: *code-analysis.yml*. Detalhes sobre o conteúdo desse arquivo:
     * Configurar o ambiente do projeto para execução dos testes;
     * Gerar arquivo(s) com a cobertura (coverage) dos testes;
-    * Executar o SonarCloud Sca;
+    * Executar o SonarCloud scan;
     * As variáveis de ambiente devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github: [Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions).
       - [Criar SONAR_TOKEN](https://docs.sonarsource.com/sonarqube/latest/user-guide/user-account/generating-and-using-tokens/#generating-a-token).
 
@@ -39,6 +40,7 @@ Exemplos de arquivos para executar testes e SonarCloud:
 - [Python (FastAPI)](https://github.com/fga-eps-mds/2024.1-UnB-TV-Admin/blob/develop/.github/workflows/code-analysis.yml);
 - [Python (Django)](https://github.com/fga-eps-mds/2023-2-MeasureSoftGram-Service/blob/develop/.github/workflows/test.yml);
 - [TypeScript (FrontEnd)](https://github.com/fga-eps-mds/2023.1-Dnit-Front/blob/main/.github/workflows/sonarcloud.yml).
+- [Dart (Flutter)](https://github.com/fga-eps-mds/2024.2-ARANDU-APP/blob/dev/.github/workflows/code-analysis.yml)
 
 Essa action é executada a cada push na branch principal do repositório.
 
@@ -78,7 +80,7 @@ jobs:
           fetch-depth: 0
           
       - name: Install dotenv
-        run: pip install python-dotenv packaging
+        run: pip install python-dotenv packaging pandas
           
       - name: Cria arquivo .env
         run: |
@@ -110,8 +112,7 @@ jobs:
           git push
 ```
 
-3. Altere nessa linha para o seu repositório de documentação: `git clone --single-branch --branch main "https://x-access-token:${{secrets.API_TOKEN_GITHUB}}@github.com/fga-eps-mds/<<ADICIONAR AQUI SEU REPOSITÓRIO DE DOC>>" doc`.
-4. De forma semelhante a outra action, algumas variáveis devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github ([Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)):
+3. De forma semelhante a outra action, algumas variáveis devem ser atribuídas como variáveis *secrets* de um *enviroment* no Github ([Como usar secrets no Github](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)):
     * [API_TOKEN_GITHUB](API_TOKEN_GITHUB);
     * **USER_EMAIL** e **USER_NAME**: seu e-mail e nome no Github.
     * **REPO_DOC**: deve ser o nome do repositório de documentação, que possui as issues a serem analisadas.
