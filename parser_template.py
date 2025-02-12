@@ -1,10 +1,8 @@
 import json
 import requests
-import sys
 from datetime import datetime
 import requests
 # import datetime
-import pandas as pd
 import os
 from packaging import version
 from dotenv import load_dotenv
@@ -18,6 +16,8 @@ load_dotenv()
 # Variáveis globais ao repositório
 OWNER = "fga-eps-mds"
 REPO = os.getenv('REPO')
+REPOS = os.getenv('REPOS')
+REPOS = REPOS.strip("[]")
 REPO_ISSUES = os.getenv('REPO_DOC')
 
 # Configurar as variáveis de ambiente
@@ -32,13 +32,13 @@ METRICS_SONAR = [
     "functions",
     "duplicated_lines_density",
     "coverage",
-    "ncloc",
-    "confirmed_issues",
-    "open_issues",
+    "ncloc",                        # Total de linhas
+    "confirmed_issues",             # Issues confirmadas
+    "open_issues",                  # Issues abertas
     "test_execution_time",
-    "bugs",
-    "blocker_violations",
-    "critical_violations",
+    "bugs",                         # Numero de issues do tipo bug
+    "blocker_violations",           # Numero de issues do tipo blocker
+    "critical_violations",          # Numero de issues do tipo critical
     "major_violations",
     "minor_violations",
     "info_violations"
@@ -107,17 +107,20 @@ def create_release():
 #################
 
 def save_sonar_metrics(tag):
-    response = requests.get(f'{BASE_URL_SONAR}{REPO}&metricKeys={",".join(METRICS_SONAR)}&ps=500')
+    repos_list = [repo.strip().strip('"') for repo in REPOS.split('", "')]        
+    for repo in repos_list:
+        print(f"Extraindo métricas do Sonar {repo}...")
+        response = requests.get(f'{BASE_URL_SONAR}{repo}&metricKeys={",".join(METRICS_SONAR)}&ps=500')
 
-    j = json.loads(response.text)
+        j = json.loads(response.text)
 
-    print("Extração do Sonar concluída.")
+        print(f"Extração do Sonar {repo} concluída.")
 
-    file_path = f'./analytics-raw-data/fga-eps-mds-{REPO}-{TODAY.strftime("%m-%d-%Y-%H-%M-%S")}-{tag}.json'
+        file_path = f'./analytics-raw-data/fga-eps-mds-{repo}-{TODAY.strftime("%m-%d-%Y-%H-%M-%S")}-{tag}.json'
 
-    with open(file_path, 'w') as fp:
-        fp.write(json.dumps(j))
-        fp.close()
+        with open(file_path, 'w') as fp:
+            fp.write(json.dumps(j))
+            fp.close()
 
     return
 
