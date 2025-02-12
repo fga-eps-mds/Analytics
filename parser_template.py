@@ -30,16 +30,18 @@ DEVELOP = os.getenv('DEVELOP')
 METRICS_SONAR = [
     "files",
     "functions",
-    "complexity",
-    "comment_lines_density",
     "duplicated_lines_density",
     "coverage",
     "ncloc",
-    "tests",
-    "test_errors",
-    "test_failures",
+    "confirmed_issues",
+    "open_issues",
     "test_execution_time",
-    "security_rating",
+    "bugs",
+    "blocker_violations",
+    "critical_violations",
+    "major_violations",
+    "minor_violations",
+    "info_violations"
 ]
 
 BASE_URL_SONAR = "https://sonarcloud.io/api/measures/component_tree?component=fga-eps-mds_"
@@ -186,8 +188,8 @@ def save_github_metrics_issues():
         json.dump(issues, fp, indent=4)
 
 if __name__ == "__main__":
-    _, tag = create_release()
+    tag = 2024.1
 
     save_sonar_metrics(tag)
-    save_github_metrics_runs()
-    save_github_metrics_issues()
+    # save_github_metrics_runs()
+    # save_github_metrics_issues()
