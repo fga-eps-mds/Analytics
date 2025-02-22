@@ -166,7 +166,7 @@ def save_github_metrics_issues():
     page = 1
 
     while True:
-        response = requests.get(api_url_issues, params={'state': 'all', 'per_page': 100, 'page': page})
+        response = requests.get(api_url_issues, params={'state': 'all', 'per_page': 100, 'page': page, 'labels': 'US,bug,FEATURE,enhancement'})
 
         page_issues = response.json()
         if not page_issues:
