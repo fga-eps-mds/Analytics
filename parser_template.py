@@ -189,7 +189,7 @@ def save_github_metrics_issues():
         json.dump(issues, fp, indent=4)
 
 if __name__ == "__main__":
-    _, tag = create_release()
-    save_sonar_metrics(tag)
-    save_github_metrics_runs()
-    save_github_metrics_issues()
+    # _, tag = create_release()
+    save_sonar_metrics('1.5.6')
+    # save_github_metrics_runs()
+    # save_github_metrics_issues()
