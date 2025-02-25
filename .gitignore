@@ -3,5 +3,4 @@
 .DS_Store
 .env
 .venv
-analytics-raw-data/
 data/

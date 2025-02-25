@@ -1,0 +1,14 @@
+{
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 0
+    },
+    "baseComponent": {
+        "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-02-24-2025-11-07-28-1.5.8",
+        "name": "fga-eps-mds-2024.1-MeasureSoftGram-Core-02-24-2025-11-07-28-1.5.8",
+        "qualifier": "TRK",
+        "measures": []
+    },
+    "components": []
+}
