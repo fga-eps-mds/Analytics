@@ -30,18 +30,19 @@ DEVELOP = os.getenv('DEVELOP')
 METRICS_SONAR = [
     "files",
     "functions",
+    "complexity",
+    "comment_lines_density",
     "duplicated_lines_density",
     "coverage",
-    "ncloc",                        # Total de linhas
-    "confirmed_issues",             # Issues confirmadas
-    "open_issues",                  # Issues abertas
+    "ncloc",
+    "tests",
+    "test_errors",
+    "test_failures",
     "test_execution_time",
-    "bugs",                         # Numero de issues do tipo bug
-    "blocker_violations",           # Numero de issues do tipo blocker
-    "critical_violations",          # Numero de issues do tipo critical
-    "major_violations",
-    "minor_violations",
-    "info_violations"
+    "security_rating",
+    "blocker_violations",
+    "critical_violations",
+    "bugs"
 ]
 
 BASE_URL_SONAR = "https://sonarcloud.io/api/measures/component_tree?component=fga-eps-mds_"
