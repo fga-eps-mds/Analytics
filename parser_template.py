@@ -40,6 +40,9 @@ METRICS_SONAR = [
     "test_failures",
     "test_execution_time",
     "security_rating",
+    "blocker_violations",
+    "critical_violations",
+    "bugs"
 ]
 
 BASE_URL_SONAR = "https://sonarcloud.io/api/measures/component_tree?component=fga-eps-mds_"
@@ -187,7 +190,6 @@ def save_github_metrics_issues():
 
 if __name__ == "__main__":
     _, tag = create_release()
-
-    save_sonar_metrics(tag)
+    save_sonar_metrics('1.5.6')
     save_github_metrics_runs()
     save_github_metrics_issues()

@@ -1,0 +1,1964 @@
+{
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 100,
+        "total": 41
+    },
+    "baseComponent": {
+        "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8",
+        "name": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8",
+        "qualifier": "TRK",
+        "measures": [
+            {
+                "metric": "blocker_violations",
+                "value": "0",
+                "bestValue": true
+            },
+            {
+                "metric": "bugs",
+                "value": "0",
+                "bestValue": true
+            },
+            {
+                "metric": "comment_lines_density",
+                "value": "20.1",
+                "bestValue": false
+            },
+            {
+                "metric": "complexity",
+                "value": "171"
+            },
+            {
+                "metric": "coverage",
+                "value": "76.8",
+                "bestValue": false
+            },
+            {
+                "metric": "critical_violations",
+                "value": "3",
+                "bestValue": false
+            },
+            {
+                "metric": "duplicated_lines_density",
+                "value": "0.0",
+                "bestValue": true
+            },
+            {
+                "metric": "files",
+                "value": "16"
+            },
+            {
+                "metric": "functions",
+                "value": "56"
+            },
+            {
+                "metric": "ncloc",
+                "value": "1392"
+            },
+            {
+                "metric": "security_rating",
+                "value": "1.0",
+                "bestValue": true
+            }
+        ]
+    },
+    "components": [
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/util/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "FIL",
+            "path": "src/util/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "60.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "2"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "FIL",
+            "path": "src/core/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "0"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/staticfiles/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "FIL",
+            "path": "src/staticfiles/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "50.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "2"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/resources/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "FIL",
+            "path": "src/resources/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "50.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "1"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "FIL",
+            "path": "src/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "0"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/__init__.py",
+            "name": "__init__.py",
+            "qualifier": "UTS",
+            "path": "tests/__init__.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core/aggregated_normalized_measures.py",
+            "name": "aggregated_normalized_measures.py",
+            "qualifier": "FIL",
+            "path": "src/core/aggregated_normalized_measures.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "19.1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "15"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "82.2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "9"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "280"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/aggregated_normalized_measures_data.py",
+            "name": "aggregated_normalized_measures_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/aggregated_normalized_measures_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/aggregation_data.py",
+            "name": "aggregation_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/aggregation_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/resources/analysis.py",
+            "name": "analysis.py",
+            "qualifier": "FIL",
+            "path": "src/resources/analysis.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "1.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "22"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "5"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "175"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/analysis_data.py",
+            "name": "analysis_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/analysis_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/util/check.py",
+            "name": "check.py",
+            "qualifier": "FIL",
+            "path": "src/util/check.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "1.9",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "37"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "87.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "12"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "103"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/resources/constants.py",
+            "name": "constants.py",
+            "qualifier": "FIL",
+            "path": "src/resources/constants.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "185"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core",
+            "name": "core",
+            "qualifier": "DIR",
+            "path": "src/core",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "comment_lines_density",
+                    "value": "34.8",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "98"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "81.2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "5"
+                },
+                {
+                    "metric": "functions",
+                    "value": "33"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "609"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/staticfiles/default_pre_config.py",
+            "name": "default_pre_config.py",
+            "qualifier": "FIL",
+            "path": "src/staticfiles/default_pre_config.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "1.5",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "130"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/util/exceptions.py",
+            "name": "exceptions.py",
+            "qualifier": "FIL",
+            "path": "src/util/exceptions.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "39.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "20"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/integration_data.py",
+            "name": "integration_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/integration_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core/measures_functions.py",
+            "name": "measures_functions.py",
+            "qualifier": "FIL",
+            "path": "src/core/measures_functions.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "33.3",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "34"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "77.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "9"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "110"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/measures_functions.py",
+            "name": "measures_functions.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/measures_functions.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/resources",
+            "name": "resources",
+            "qualifier": "DIR",
+            "path": "src/resources",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "comment_lines_density",
+                    "value": "1.1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "22"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "98.9",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "3"
+                },
+                {
+                    "metric": "functions",
+                    "value": "5"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "361"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/util/run_time_data_operations.py",
+            "name": "run_time_data_operations.py",
+            "qualifier": "FIL",
+            "path": "src/util/run_time_data_operations.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "14"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "6"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "77"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core/schemas.py",
+            "name": "schemas.py",
+            "qualifier": "FIL",
+            "path": "src/core/schemas.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "54.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "37"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "78.6",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "9"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "162"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/schemas_data.py",
+            "name": "schemas_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/schemas_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src",
+            "name": "src",
+            "qualifier": "DIR",
+            "path": "src",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "comment_lines_density",
+                    "value": "20.1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "171"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "76.8",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "3",
+                    "bestValue": false
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "16"
+                },
+                {
+                    "metric": "functions",
+                    "value": "56"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "1392"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/staticfiles",
+            "name": "staticfiles",
+            "qualifier": "DIR",
+            "path": "src/staticfiles",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "comment_lines_density",
+                    "value": "1.8",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "3"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "220"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/staticfiles/supported_metrics.py",
+            "name": "supported_metrics.py",
+            "qualifier": "FIL",
+            "path": "src/staticfiles/supported_metrics.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "0"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "88"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/test_aggregated_normalized_measures.py",
+            "name": "test_aggregated_normalized_measures.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/test_aggregated_normalized_measures.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/test_agregation.py",
+            "name": "test_agregation.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/test_agregation.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/test_analysis.py",
+            "name": "test_analysis.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/test_analysis.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/test_helpers.py",
+            "name": "test_helpers.py",
+            "qualifier": "UTS",
+            "path": "tests/test_helpers.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/test_schemas.py",
+            "name": "test_schemas.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/test_schemas.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit/test_transformations.py",
+            "name": "test_transformations.py",
+            "qualifier": "UTS",
+            "path": "tests/unit/test_transformations.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests",
+            "name": "tests",
+            "qualifier": "DIR",
+            "path": "tests",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/core/transformations.py",
+            "name": "transformations.py",
+            "qualifier": "FIL",
+            "path": "src/core/transformations.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "comment_lines_density",
+                    "value": "16.2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "12"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "94.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "files",
+                    "value": "1"
+                },
+                {
+                    "metric": "functions",
+                    "value": "6"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "57"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/transformations_data.py",
+            "name": "transformations_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/transformations_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/unit",
+            "name": "unit",
+            "qualifier": "DIR",
+            "path": "tests/unit",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:src/util",
+            "name": "util",
+            "qualifier": "DIR",
+            "path": "src/util",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "comment_lines_density",
+                    "value": "8.2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "complexity",
+                    "value": "51"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "57.2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "2",
+                    "bestValue": false
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "files",
+                    "value": "4"
+                },
+                {
+                    "metric": "functions",
+                    "value": "18"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "202"
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils",
+            "name": "utils",
+            "qualifier": "DIR",
+            "path": "tests/utils",
+            "measures": [
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "fga-eps-mds-2024.1-MeasureSoftGram-Core-09-05-2024-01-12-11-1.5.8:tests/utils/weighting_data.py",
+            "name": "weighting_data.py",
+            "qualifier": "UTS",
+            "path": "tests/utils/weighting_data.py",
+            "language": "py",
+            "measures": [
+                {
+                    "metric": "security_rating",
+                    "value": "1.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "duplicated_lines_density",
+                    "value": "0.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "blocker_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "critical_violations",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "bugs",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        }
+    ]
+}
